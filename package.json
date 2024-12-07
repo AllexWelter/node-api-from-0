@@ -1,6 +1,7 @@
 {
   "name": "api-from-0",
   "version": "1.0.0",
+  "type": "module",
   "description": "creating a new api from zero and connecting to database",
   "main": "index.js",
   "scripts": {
