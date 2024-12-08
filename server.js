@@ -15,7 +15,9 @@ const app = express()
 app.use(express.json())
 
 //new
-app.use(cors())
+app.use(cors({
+    origin: 'http://localhost:5173'
+}))
 
 app.post('/usuarios', async (req, res) => {
 
