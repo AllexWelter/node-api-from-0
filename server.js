@@ -15,11 +15,7 @@ const app = express()
 app.use(express.json())
 
 //new
-app.use(cors({
-    origin: 'http://localhost:5173', // Permite apenas requisições desta origem
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
-    allowedHeaders: ['Content-Type', 'Authorization'] // Cabeçalhos permitidos
-}));
+app.use(cors())
 
 app.post('/usuarios', async (req, res) => {
 
@@ -27,8 +23,8 @@ app.post('/usuarios', async (req, res) => {
         data: {
             email: req.body.email,
             name: req.body.name,
-            address: req.body.age
-        }
+            address: req.body.age,
+        },
     })
 
     res.status(201).json(req.body)
