@@ -8,6 +8,7 @@
 h1 {
     color: #fff;
     font-size: 32px;
+    text-align: center;
 }
 
 form {
@@ -70,5 +71,9 @@ form {
         background-color: transparent;
         border: none;
         cursor: pointer;
+    }
+
+    & button:hover {
+        opacity: 0.5;    
     }
 }
