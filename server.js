@@ -23,7 +23,7 @@ app.post('/usuarios', async (req, res) => {
         data: {
             email: req.body.email,
             name: req.body.name,
-            address: req.body.age,
+            address: req.body.address,
         },
     })
 
